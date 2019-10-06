@@ -17,9 +17,20 @@ public class App {
 
 	public static void main(String[] args) {
 		context = new ClassPathXmlApplicationContext("models/universitate.xml");
-		
-		Universitate loc = (Universitate) context.getBean("universitate");
-		System.out.println(loc);
+
+		getBeanForUniversitate();
+	}
+
+	public static Universitate getBeanForUniversitate() {
+		return (Universitate) context.getBean("universitate");
+	}
+
+	public static ApplicationContext getContext() {
+		return context;
+	}
+
+	public static void setContext(ApplicationContext context) {
+		App.context = context;
 	}
 
 }
