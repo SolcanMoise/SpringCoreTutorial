@@ -1,0 +1,19 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<import resource="facultate.xml" />
+
+	<bean id="universitate" class="core.models.Universitate">
+
+		<constructor-arg>
+			<list>
+				<ref bean="facultate1"></ref>
+				<ref bean="facultate2"></ref>
+			</list>
+		</constructor-arg>
+
+	</bean>
+
+</beans>
