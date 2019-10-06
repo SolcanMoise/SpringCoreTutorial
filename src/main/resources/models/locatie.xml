@@ -1,0 +1,20 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<bean id="locatie1" class="core.models.Locatie">
+		<constructor-arg index="0" value="Country1" />
+		<constructor-arg index="1" value="City1" />
+		<constructor-arg index="2" value="Street1" />
+		<constructor-arg index="3" value="12345" />
+	</bean>
+
+	<bean id="locatie2" class="core.models.Locatie">
+		<constructor-arg index="0" value="Country2" />
+		<constructor-arg index="1" value="City2" />
+		<constructor-arg index="2" value="Street2" />
+		<constructor-arg index="3" value="12346" />
+	</bean>
+
+</beans>
