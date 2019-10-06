@@ -1,0 +1,58 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<import resource="locatie.xml" />
+	<import resource="student.xml" />
+
+	<bean id="facultate1" class="core.models.Facultate">
+		<constructor-arg type="java.lang.String">
+			<value>Facultate1</value>
+		</constructor-arg>
+
+		<constructor-arg type="core.models.Locatie"
+			ref="locatie1"></constructor-arg>
+
+		<constructor-arg type="java.lang.String">
+			<value>0245636271</value>
+		</constructor-arg>
+
+		<constructor-arg type="java.lang.String">
+			<value>email1@yahoo.com</value>
+		</constructor-arg>
+
+		<constructor-arg>
+			<list>
+				<ref bean="student1"></ref>
+				<ref bean="student2"></ref>
+			</list>
+		</constructor-arg>
+
+	</bean>
+
+	<bean id="facultate2" class="core.models.Facultate">
+		<constructor-arg type="java.lang.String">
+			<value>Facultate2</value>
+		</constructor-arg>
+
+		<constructor-arg type="core.models.Locatie"
+			ref="locatie2"></constructor-arg>
+
+		<constructor-arg type="java.lang.String">
+			<value>0245633251</value>
+		</constructor-arg>
+
+		<constructor-arg type="java.lang.String">
+			<value>email2@yahoo.com</value>
+		</constructor-arg>
+
+		<constructor-arg type="java.util.List">
+			<list>
+				<ref bean="student3"></ref>
+			</list>
+		</constructor-arg>
+
+	</bean>
+
+</beans>
