@@ -1,0 +1,30 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<bean id="student1" class="core.models.Student">
+		<property name="name" value="Name1" />
+		<property name="surname" value="Surname1" />
+		<property name="address" value="Address1" />
+		<property name="CNP" value="1872734241102" />
+		<property name="telephone" value="0762345671" />
+	</bean>
+
+	<bean id="student2" class="core.models.Student">
+		<property name="name" value="Name2" />
+		<property name="surname" value="Surname2" />
+		<property name="address" value="Address2" />
+		<property name="CNP" value="1872734242234" />
+		<property name="telephone" value="0745345671" />
+	</bean>
+
+	<bean id="student3" class="core.models.Student">
+		<property name="name" value="Name3" />
+		<property name="surname" value="Surname3" />
+		<property name="address" value="Address3" />
+		<property name="CNP" value="1872734249934" />
+		<property name="telephone" value="0747655671" />
+	</bean>
+
+</beans>
